@@ -1,0 +1,59 @@
+
+.btn{
+    &.btn-underline{
+        position: relative;
+        padding: 0;
+        color: $dark;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $dark;
+            transition: .5s;
+        }
+        &:hover{
+            &::before{
+                left: auto;
+                right: 0;
+                width: 0;
+            }
+        }
+
+        &.text-white{
+            color: $white;
+            font-size: 12px;
+
+            &::before{
+                background-color: $white;
+            }
+        }
+    }
+}
+
+
+.filter--icon{
+    margin-right: 15px;
+    cursor: pointer;
+    span{
+        display: block;
+        width: 15px;
+        height: 1px;
+        background-color: $black;
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+        &:last-child{
+            width: 10px;
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+.down-box{
+    background: red;
+}

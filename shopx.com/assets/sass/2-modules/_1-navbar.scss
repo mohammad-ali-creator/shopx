@@ -1,0 +1,59 @@
+.shopx--main-nav{
+
+    &-wrapper{
+        border-top: 1px solid #f4f4f4;
+    }
+    ul{
+        @extend .list-unstyle;
+    }
+   > ul > li{
+        display: inline-block;
+        
+        &:not(:first-child){
+            margin-left: -4px;
+        }
+        a{
+            padding: 15px 20px;
+            display: block;
+            color: $dark;
+
+            &:hover{
+                color: $c-primary;
+            }
+        }
+
+        &.menu-item-has-children{
+            > .sub-menu{
+                top: 100%;
+                left: 0;
+            }
+        }
+        
+    }
+    .menu-item-has-children{
+            position: relative;
+    
+           .sub-menu{
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 200px;
+                background: #383057;
+                visibility: hidden;
+               z-index: 9999;
+
+                li a{
+                    color: $c-light;
+                }
+            }
+
+            &:hover{
+               > .sub-menu{
+                    visibility: visible;
+                }
+            }
+            
+        }
+    
+
+}

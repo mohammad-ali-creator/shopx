@@ -1,0 +1,21 @@
+.footer-{
+    &-section{
+        padding-top: 120px;
+    }
+    &-copyright{
+        span{
+            color: #7b7c85;
+            font-size: 13px;
+            font-family: $f-titilliam;
+            font-weight: $regular;
+        }
+    }
+
+    &-payment{
+        text-align: end;
+        img{
+            width: 280px;
+            height: 67px;
+        }
+    }
+}

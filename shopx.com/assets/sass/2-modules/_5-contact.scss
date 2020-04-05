@@ -1,0 +1,131 @@
+.contact-{
+
+    &-section{
+        padding: 30px 0;
+    }
+    &-instagram{
+        &-title{
+            font-size: 18px;
+            font-family: $f-titilliam;
+            font-weight: $regular;
+            color: #1d1e24;
+
+            i{
+                padding-right: 5px;
+            }
+        }
+       &-gallery{
+        width: 380px;
+        height: 195px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-top: 30px;
+       }
+    }
+
+    &-address{
+        &-logo{
+            max-width: 154px;
+            max-height: 65px;
+        }
+        &-text{
+            padding-top: 15px;
+            padding-bottom: 5px;
+            color: #7b7c85;
+            font-size: 13px;
+            font-family: $f-roboto;
+            font-weight: $light;
+            @include lineHeight(22, 13);
+            padding-right: 90px;
+        }
+
+        &-link{
+            color: #7b7c85;
+            font-size: 12px;
+
+            i{
+                padding-left: 5px;
+            }
+        }
+    }
+
+    &-links{
+
+        &-title{
+            color: #1d1e24;
+            font-size: 18px;
+            font-family: $f-titilliam;
+            font-weight: $light;
+        }
+
+
+         &-item{
+        @extend .list-unstyle;
+            
+            li a {
+                font-size: 12px;
+                @include lineHeight(36, 12);
+                color: #7b7c85;
+                i{
+                    padding-right: 5px;
+                }
+            }
+        
+            &-container{
+                display: flex;
+                margin-top: 20px;
+            }
+       
+        }
+    }
+
+   &-row{
+    align-items: center;
+   }
+   
+}
+
+
+.contact--instagram-gallery-item:nth-child(1){
+    background-color: $c-pink;
+}
+.contact--instagram-gallery-item:nth-child(2){
+    background-color: $dark-2;
+}
+.contact--instagram-gallery-item:nth-child(3){
+    background-color: $c-pink;
+}
+.contact--instagram-gallery-item:nth-child(4){
+    background-color: $dark-2;
+}
+.contact--instagram-gallery-item:nth-child(5){
+    background-color: $c-primary-dark;
+}
+.contact--instagram-gallery-item:nth-child(6){
+    background-color: $c-pink;
+}
+.contact--instagram-gallery-item:nth-child(7){
+    background-color: $dark-2;
+}
+.contact--instagram-gallery-item:nth-child(8){
+    background-color: $c-primary-dark;
+}
+
+
+//  w: 380px 
+// h: 195px
+
+
+
+/*
+ background: #f3eaea;
+        width: 380px;
+        height: 195px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-top: 30px;
+*/

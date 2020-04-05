@@ -1,0 +1,15 @@
+
+.shopx--logo{
+
+    font-size: 48px;
+    font-weight: 700;
+    
+    a{
+        color: $dark;
+
+        &:hover{
+            color: $c-primary;
+            text-decoration: none;
+        }
+    }
+}

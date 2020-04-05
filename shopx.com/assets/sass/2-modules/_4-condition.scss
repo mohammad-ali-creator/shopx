@@ -1,0 +1,36 @@
+.condition-{
+   
+    &-item{
+        text-align: center;
+        background-color: $dark-2;
+        padding: 50px 0px;
+
+        &-thumb img{
+            
+            max-width: 100px;
+            height: 65px;
+        }
+
+        &-title h2{
+            font-size: 18px;
+            @include  lineHeight(24, 18);
+            font-family: $f-titilliam;
+            font-weight: $light;
+            padding-top: 35px;
+            color: $white;
+        }
+
+        &-text p{
+            font-size: 14px;
+            @include lineHeight(24, 14);
+            color: #767676;
+            font-family: $f-roboto;
+            font-weight:$light;
+
+        }
+
+        &.style-lighter{
+            background-color: #202127;
+        }
+    }
+}

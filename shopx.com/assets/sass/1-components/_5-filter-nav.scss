@@ -1,0 +1,23 @@
+.filter--list{
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s linear;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    li{
+        display: inline-block;
+        padding: 28px 14px;
+        text-transform: uppercase;
+        font-family: $f-roboto;
+        font-size: 11px;
+        color: #45505e;
+        cursor: pointer;
+        letter-spacing: 2px;
+        &:hover{
+            color: #7acca0;
+        }
+    }
+
+}
